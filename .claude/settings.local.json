@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(cd \"D:\\\\Liyw\\\\monkey_classification\"; Get-ChildItem \"data\\\\training\\\\training\" | Where-Object { $_.PSIsContainer } | ForEach-Object { Write-Host \"Class $\\($_.Name\\): $\\(@\\(Get-ChildItem $_.FullName\\).Count\\) files\" })",
+      "PowerShell(Get-ChildItem \"data\\\\validation\\\\validation\" | Where-Object { $_.PSIsContainer } | ForEach-Object { Write-Host \"Class $\\($_.Name\\): $\\(@\\(Get-ChildItem $_.FullName\\).Count\\) files\" })"
+    ]
+  }
+}
